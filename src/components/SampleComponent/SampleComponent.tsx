@@ -1,14 +1,14 @@
 import React from "react";
 import { Text, TouchableOpacity } from "react-native";
 
-// export interface ButtonProps {
-//   label: string;
-// }
+export interface SampleComponentProps {
+  label: string;
+}
 
-const SampleComponent = () => {
+const SampleComponent = ({label}: SampleComponentProps) => {
   return (
     <TouchableOpacity>
-      <Text>Sample Component</Text>
+      <Text>Sample Component: {label}</Text>
     </TouchableOpacity>
   );
   // return <button>{props.label}</button>;
